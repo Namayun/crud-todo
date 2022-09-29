@@ -1,0 +1,66 @@
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;
+}
+
+/* for toggle in JS */
+
+.backdropActive {
+    display: block;
+}
+
+/* for toggle in JS */
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    display: none;
+    border-radius: 6px;
+
+}
+
+
+/* for toggle in JS */
+.modalActive {
+    display: block;
+}
+
+/* for toggle in JS */
+
+
+.modalCloseButton span {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+
+.modalCloseButton span:first-child {
+    transform: rotate(45deg);
+}
+
+.modalCloseButton span:last-child {
+    transform: rotate(-45deg);
+}
+
+

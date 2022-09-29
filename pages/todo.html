@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/todo.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>TODO LIST</h1>
+            <p id="user-name"></p>
+            <button id="log-out">Log out</button>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <form id="todo-form">
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Description" id="descr">
+                <button>Create Todo</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="render">
+        <div class="container">
+            <div class="output">
+            </div>
+        </div>
+    </section>
+
+
+    
+        <div class="backdrop">
+            <div class="modal">
+                <div class="modalHeader">
+                    <h2></h2>
+                    <div class="modalCloseButton">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="modalContent">
+                    <input type="text" placeholder="title" id="edit-title">
+                    <input type="text" placeholder="description" id="edit-desc">
+                    <button id="edit-modal">EDIT</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer>
+            <button id="redirectAuth">AUTH</button>
+            <button id="redirectReg">REG</button>
+        </footer>
+
+
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/todo.js"></script>
+</body>
+
+
+</html>
